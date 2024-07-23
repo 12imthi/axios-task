@@ -23,7 +23,7 @@ function Edit() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`https://669b726e276e45187d3581cf.mockapi.io/api/products/${id}`);
+      const response = await axios.get(`https://669ff410b132e2c136ffaf54.mockapi.io/api/v1/products/${id}`);
       setEditData(response.data);
     } catch (error) {
       setError(error);
@@ -42,7 +42,7 @@ function Edit() {
 
   const handleSave = async () => {
     try {
-      await axios.put(`https://669b726e276e45187d3581cf.mockapi.io/api/products/${id}`, editData);
+      await axios.put(`https://669ff410b132e2c136ffaf54.mockapi.io/api/v1/products/${id}`, editData);
       navigate('/product'); // Redirect to products page after successful edit
     } catch (error) {
       console.error('Error updating product:', error.response ? error.response.data : error.message);

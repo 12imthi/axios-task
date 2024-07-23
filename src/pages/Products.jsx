@@ -14,7 +14,7 @@ const Products = ({ setId }) => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('https://669b726e276e45187d3581cf.mockapi.io/api/products');
+      const response = await axios.get('https://669ff410b132e2c136ffaf54.mockapi.io/api/v1/products');
       setData(response.data);
     } catch (error) {
       setError(error);
@@ -30,7 +30,7 @@ const Products = ({ setId }) => {
   };
 
   const handleDelete = async (id) => {
-    const url = `https://669b726e276e45187d3581cf.mockapi.io/api/products/${id}`;
+    const url = `https://669ff410b132e2c136ffaf54.mockapi.io/api/v1/products/${id}`;
     console.log('Attempting to delete:', url);
     try {
       await axios.delete(url);

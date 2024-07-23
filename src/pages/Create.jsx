@@ -28,7 +28,7 @@ function Create() {
     setError(null);
 
     try {
-      await axios.post('https://669b726e276e45187d3581cf.mockapi.io/api/products', formData);
+      await axios.post('https://669ff410b132e2c136ffaf54.mockapi.io/api/v1/products', formData);
       navigate('/product'); // Navigate to the product list page after successful creation
     } catch (error) {
       setError(error);

@@ -7,7 +7,7 @@ const Home = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get('https://669b726e276e45187d3581cf.mockapi.io/api/products')
+    axios.get('https://669ff410b132e2c136ffaf54.mockapi.io/api/v1/products')
       .then((response) => {
         setData(response.data);
         setLoading(false);

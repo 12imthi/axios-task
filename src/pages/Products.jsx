@@ -67,7 +67,7 @@ const Products = ({ setId }) => {
               <td>{product.product_description}</td>
               <td>${product.product_price}</td>
               <td>
-                <button type="button" className="btn btn-warning" onClick={() => handleEdit(product.id)}>
+                <button type="button" className="btn btn-warning" style={{marginRight: '10px'}} onClick={() => handleEdit(product.id)}>
                   Edit
                 </button>
                 <button type="button" className="btn btn-danger" onClick={() => handleDelete(product.id)}>
